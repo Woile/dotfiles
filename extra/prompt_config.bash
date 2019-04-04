@@ -51,12 +51,12 @@ _get_kube_prompt() {
     fi
 }
 
-python_interpreter_like_prompt() {
+bash_interpreter_like_prompt() {
     # (Virtualenv)user@host in ~/working_path |git_branch_status|
 
-    PS1="${YELLOW_B}$(_get_virtualenv_prompt)${GREEN}$(_get_nodejs_prompt)${BLUE_B}$(_get_kube_prompt)${GREEN_B}\u${BLUE_B}@${RED_B}\h${WHITE_B} in ${BLUE_B}\w${CYAN} $(__git_ps1 "|%s|")${GREEN_B} $\n${GREEN_B}>>>\[\033[00m\] "
+    PS1="${YELLOW_B}$(_get_virtualenv_prompt)${GREEN}$(_get_nodejs_prompt)${BLUE_B}$(_get_kube_prompt)${GREEN_B}\u${BLUE_B}@${RED_B}\h${WHITE_B} in ${BLUE_B}\w${CYAN} $(__git_ps1 "|%s|")${GREEN_B}\n${GREEN_B}$\[\033[00m\] "
 }
 
 # Set the prompt
-PROMPT_COMMAND=python_interpreter_like_prompt
+PROMPT_COMMAND=bash_interpreter_like_prompt
 
