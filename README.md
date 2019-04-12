@@ -4,7 +4,7 @@ dotfiles
 My personal dotfiles
 Dotfiles represents how you customize your shell.
 I have written/added few customization to my shell since years ago. Many times I have reused them in different systems so I decided to create a repository and share with everyone.
-My aims IS NOT compare this project with another ones around there instead I just want to keep my stuff organized. 
+My aims IS NOT compare this project with another ones around there instead I just want to keep my stuff organized.
 
 There are a LOT of awesome *frameworks* to customize your shell such as [bash-it](https://github.com/revans/bash-it), [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh), [more](http://dotfiles.github.io/), they have inspired me to create this project with my personal stuff.
 
@@ -27,9 +27,11 @@ export DOT_GIT_AUTHOREMAIL='yourEmail'
 
 ## What is inside?
 * `Configurations`
-* `Custom prompt (Virtualenv + GIT support)`
+* `Custom prompt (Virtualenv + GIT support + kubernetes)`
 * `Functions`
 * `Aliases`
+    * Django
+    * System
 * `Completions`
 * `Scripts`
 
