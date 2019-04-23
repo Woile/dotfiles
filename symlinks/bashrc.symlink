@@ -16,6 +16,9 @@ check_virtualenv() {
             echo "Found .venv in directory. Calling: workon ${env}"
             workon $env
         fi
+    elif [ -d venv ]; then
+        echo "Found venv directory. Activating..."
+        . venv/bin/activate
     fi
 }
 venv_cd () {
@@ -26,4 +29,3 @@ alias cd='venv_cd'
 # Call check_virtualenv in case opening directly into a directory (e.g
 # when opening a new tab in Terminal.app).
 check_virtualenv
-
